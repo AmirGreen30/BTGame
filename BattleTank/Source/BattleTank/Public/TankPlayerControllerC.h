@@ -26,9 +26,13 @@ private:
 	void AimTowardsCrosshair();
 	bool GetSightRayHitLocation(FVector& OutHitLocation) const;
 
+	
+
 	UPROPERTY(EditAnywhere)
 	float CrosshairXLocation = 0.5f;
 
 	UPROPERTY(EditAnywhere)
 	float CrosshairYLocation = 0.333333f;
+
+	bool GetLookDirection(FVector2D ScreenLocation, FVector & LookDirection) const;
 };
